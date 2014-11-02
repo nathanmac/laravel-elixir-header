@@ -1,0 +1,28 @@
+{
+  "name": "laravel-elixir-header",
+  "version": "0.1.0",
+  "description": "Laravel Elixir wrapper around header Gulp task.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp",
+    "laravel",
+    "elixir",
+    "header"
+  ],
+  "author": "Nathan Macnamara",
+  "license": "MIT",
+  "homepage": "https://github.com/nathanmac/laravel-elixir-header",
+  "bugs": "https://github.com/nathanmac/laravel-elixir-header/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nathanmac/laravel-elixir-header"
+  },
+  "dependencies": {
+    "gulp-header": "^1.2.0",
+    "gulp-notify": "^2.0.0",
+    "underscore": "^1.7.0"
+  }
+}
