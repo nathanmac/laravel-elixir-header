@@ -1,6 +1,6 @@
 {
   "name": "laravel-elixir-header",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Laravel Elixir wrapper around header Gulp task.",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,5 @@
   },
   "dependencies": {
     "gulp-header": "^1.2.0",
-    "gulp-notify": "^2.0.0",
-    "underscore": "^1.7.0"
   }
 }

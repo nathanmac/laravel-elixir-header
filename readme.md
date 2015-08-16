@@ -20,7 +20,7 @@ var elixir = require('laravel-elixir');
 require('laravel-elixir-header');
 
 elixir(function(mix) {
-   mix.header('\n/** ABC Solutions - 2014 */\n');
+   mix.header('\n/** ABC Solutions - 2015 */\n');
 });
 ```
 
