@@ -1,8 +1,7 @@
-var elixir = require('laravel-elixir');
-var gulp = require('gulp');
+var gulp   = require('gulp');
 var header = require('gulp-header');
-var notify = require('gulp-notify');
-var _ = require('underscore');
+var elixir = require('laravel-elixir');
+var config = elixir.config;
 
 /*
  |----------------------------------------------------------------
@@ -16,24 +15,18 @@ var _ = require('underscore');
 
 elixir.extend('header', function(banner, data) {
 
-    var config = this;
+    new elixir.Task('header', function () {
 
-    var files = [
-        config.jsOutput + "/*.js",
-        config.cssOutput + "/*.css"
-    ];
+        var files = [
+            config.get('public.js.outputFolder') + "/*.js",
+            config.get('public.css.outputFolder') + "/*.css"
+        ];
 
-    gulp.task('header', function() {
         return gulp.src(files, {base: './'})
             .pipe(header(banner, data))
             .pipe(gulp.dest('./'))
-            .pipe(notify({
-                title: 'File Headers Added!',
-                message: 'All resource files have been headed with header messages/banner.',
-                icon: __dirname + '/../laravel-elixir/icons/pass.png'
-            }));
-    });
+            .pipe(new elixir.Notification('Header Banner Added!'));
 
-    return this.queueTask('header');
+    });
 
 });
