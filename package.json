@@ -21,6 +21,6 @@
     "url": "https://github.com/nathanmac/laravel-elixir-header"
   },
   "dependencies": {
-    "gulp-header": "^1.2.0",
+    "gulp-header": "^1.2.0"
   }
 }
